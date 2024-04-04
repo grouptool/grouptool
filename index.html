@@ -1,1 +1,32 @@
-hello world!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group Mixer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-side"> 
+      <h1 class="heading">Group Mixer</h1>
+      <textarea id="nameInput" placeholder="Enter names (comma or newline separated)"></textarea>
+      <div class="button-container"> 
+        <select id="groupCount">
+          <option value="2">2 Groups</option>
+          <option value="3">3 Groups</option>
+          <option value="4">4 Groups</option>
+        </select>
+        <button id="generateGroups">Generate Groups</button>
+        <button id="pickRandom">Pick Random Person</button>
+      </div>
+    </div>
+
+    <div class="right-side"> 
+      <div id="results"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
